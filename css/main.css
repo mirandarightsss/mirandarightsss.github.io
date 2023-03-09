@@ -21,8 +21,7 @@
   }
   body
   {
-    background-image: url('https://www.farmersalmanac.com/wp-content/uploads/2021/04/forget-me-not-flower-as309740666.jpeg');
-    opacity: 50%;
+    background-image: url('https://www.farmersalmanac.com/wp-content/uploads/2021/04/forget-me-not-flower-as309740666.jpeg') opacity: 50% size: 2000px;
   }
   img
   {
