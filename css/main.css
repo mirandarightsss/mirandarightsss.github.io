@@ -9,7 +9,7 @@
   }
   h2
   {
-    color:rgb(133, 174, 255);
+    color:rgb(98, 145, 240);
     font-size: 24pt;
     font-family:georgia;
   }
@@ -21,7 +21,7 @@
   }
   body
   {
-    background-image: url('https://www.farmersalmanac.com/wp-content/uploads/2021/04/forget-me-not-flower-as309740666.jpeg') opacity: 50% size: 2000px;
+    background-color: rgb(169, 214, 245);
   }
   img
   {
