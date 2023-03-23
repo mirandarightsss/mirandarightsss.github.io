@@ -2,15 +2,18 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/main.css">
-        <meta charset="UTF-8">
         <title>Have a question?</title>
     </head>
     <body>
         <h1>Have a question?</h1>
-        <form action="https://www.google.com/search">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
             <fieldset>
-                <label for="query">Type it in here:</label>
-                <input type="text" id="query" name="as_q" placeholder="Insert Question" size="100">
+                <label for="searchbar">Type it in here:</label>
+                <input type="text" id="searchbar" name="as_q" placeholder="Insert Question" size="100">
+                <br>
+                
+                <input type="checkbox" name="newwindow" value="1" id="checkwindow">
+                <label for="checkbox">Open links in a new window</label>
 
                 <label for="site">Website: </label>
                 <input type="text" id="site" name="as_sitesearch" placeholder="Enter your chosen website here" size="75">
@@ -18,17 +21,18 @@
                 <label for="images">Images Only</label>
                 <input type="checkbox" id="images" name="tbm" value="isch">
 
-                <p>Filetype: 
-                    <select name="as_filetype">
-                        <option value=""></option>
-                        <option value="jpg">Compressed</option>
-                        <option value="png">Uncompressed</option>
-                        <option value="gif">Animations (maybe)</option>
+                <p>Pre-picked favorite websites 
+                    <select name="faves">
+                        <option value="https://www.youtube.com/">Youtube</option>
+                        <option value="https://quickdraw.withgoogle.com/#">Quick Draw</option>
+                        <option value="https://www.unco.edu/canvas/">Canvas (not my fave, just useful)</option>
+                        <option value="https://open.spotify.com/">Spotify</option>
+                        <option value="https://wizardmore.com/sorting-hat-x/">Sorting Hat</option>
                     </select>
                 </p>
             </fieldset>
             <div>
-                <input type="submit" value="SEARCH">
+                <input type="submit" value="Go!">
             </div>
         </form>
     </body>
