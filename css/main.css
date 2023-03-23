@@ -1,5 +1,9 @@
 <head>
   <style>
+  background-color
+  {
+    color: rgb(191, 191, 191);
+  }
   h1
   {
     color: rgb(255, 133, 222);
@@ -18,10 +22,6 @@
     color: black;
     font-size: 14pt;
     font-family: georgia;
-  }
-  body
-  {
-    background-color: rgb(169, 214, 245);
   }
   img
   {
