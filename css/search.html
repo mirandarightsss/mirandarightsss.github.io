@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <title>Have a question?</title>
+    </head>
+    <body>
+        <h1>Have a question?</h1>
+        <form action="https://www.google.com/search">
+            <fieldset>
+                <label for="query">Type it in here:</label>
+                <input type="text" id="query" name="as_q" placeholder="Insert Question" size="100">
+
+                <label for="site">Website: </label>
+                <input type="text" id="site" name="as_sitesearch" placeholder="Enter your chosen website here" size="75">
+
+                <label for="images">Images Only</label>
+                <input type="checkbox" id="images" name="tbm" value="isch">
+
+                <p>Filetype: 
+                    <select name="as_filetype">
+                        <option value=""></option>
+                        <option value="jpg">Compressed</option>
+                        <option value="png">Uncompressed</option>
+                        <option value="gif">Animations (maybe)</option>
+                    </select>
+                </p>
+            </fieldset>
+            <div>
+                <input type="submit" value="SEARCH">
+            </div>
+        </form>
+    </body>
+    <p><a href="index.html">Home</a></p>
+</html>
