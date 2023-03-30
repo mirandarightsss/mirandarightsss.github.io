@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <style>
+        .search {
+          color: rgb(255, 133, 222);
+        }
+        </style>
+        <link href="css/main.css" rel="stylesheet">
         <title>Have a question?</title>
     </head>
     <body>
@@ -10,6 +15,7 @@
             <fieldset>
                 <label for="searchbar">Type it in here:</label>
                 <input type="text" id="searchbar" name="as_q" placeholder="Insert Question" size="100">
+                <input type="submit" value="Go!">
                 <br>
                 
                 <input type="checkbox" name="newwindow" value="1" id="checkwindow">
@@ -18,6 +24,8 @@
                 
                 <label for="site">Website: </label>
                 <input type="text" id="site" name="as_sitesearch" placeholder="Enter your chosen website here" size="75">
+                <br>
+                <input type="submit" value="Go!">
                 <br>
 
                 <p>Pre-picked favorite websites 
@@ -28,12 +36,11 @@
                         <option value="https://open.spotify.com/">Spotify</option>
                         <option value="https://wizardmore.com/sorting-hat-x/">Sorting Hat</option>
                     </select>
+                    <br>
+                    <input type="submit" value="Go!">
                 </p>
             </fieldset>
-            <div>
-                <input type="submit" value="Go!">
-            </div>
         </form>
     </body>
-    <a href="index.html">Home</a>
+    <a href="index.html">Home Page</a>
 </html>
