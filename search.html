@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style>
+<head>
+    <meta charset="utf-8">
+    <title>Google Super Search</title>
+    <link href="css/main.css" rel="stylesheet">
+    <style>
         p {
         color: black;
         }
@@ -10,42 +13,61 @@
         background-color: rgb(255, 184, 234);
         color: white;
         }
-        </style>
-        <link href="css/main.css" rel="stylesheet">
-        <title>Have a question?</title>
-    </head>
-    <body>
-        <h1>Have a question?</h1>
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <fieldset>
-                <label for="searchbar">Type it in here:</label>
-                <input type="text" id="searchbar" name="as_q" placeholder="Insert Question" size="100">
-                <input type="submit" value="Go!">
-                <br>
-                
-                <input type="checkbox" name="newwindow" value="1" id="checkwindow">
-                <label id="checkbox">Open links in a new window</label>
-                <br>
-                
-                <label for="site">Website URL: </label>
-                <input type="text" id="site" name="as_sitesearch" placeholder="Enter your chosen website here" size="75">
-                <br>
-                <input type="submit" value="Go!">
-                <br>
-
-                <p>Pre-picked favorite websites 
-                    <select name="as_sitesearch" id="favorites" class="pages">
-                        <option value="https://www.youtube.com/">Youtube</option>
-                        <option value="https://quickdraw.withgoogle.com/">Quick, Draw</option>
-                        <option value="https://www.unco.edu/canvas/">Canvas (not my fave, just useful)</option>
-                        <option value="https://open.spotify.com/">Spotify</option>
-                        <option value="https://wizardmore.com/sorting-hat-x/">Sorting Hat</option>
-                    </select>
-                    <br>
-                    <input type="submit" value="Go!">
-                </p>
-            </fieldset>
-        </form>
-    </body>
+        .question, .pages, input {
+        background-color: rgb(255, 184, 234);
+        color: white;
+        }
+        ::placeholder {
+        color: white;
+        }
+    </style>
+</head>
+<body>
     <a href="index.html">Home Page</a>
+    <h1>Google, but cooler!</h1>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    <fieldset style="width: 300px;">
+    <label for="search">Ask your question here:</label>
+    <input type="text" name="q" id="search" placeholder="Question">
+    <p>
+        <label for="808">Pre-Picked Favorites</label>
+        <select name="as_sitesearch" id="808" class="question">
+        <option value="https://www.youtube.com/">Youtube</option>
+        <option value="https://quickdraw.withgoogle.com/">Quick, Draw</option>
+        <option value="https://www.unco.edu/canvas/">Canvas (not my fave, just useful)</option>
+        <option value="https://open.spotify.com/">Spotify</option>
+        <option value="https://wizardmore.com/sorting-hat-x/">Sorting Hat</option>
+        </select>
+    </p>
+    <div>
+        <input type="radio" name="filter" value="0" id="extras">
+        <label for="extras">Show Hidden Resources</label><br>
+        <input type="radio" id="images" name="tbm" value="isch">
+        <label for="images">Only Show Images</label>
+    </div>
+    </fieldset>
+    <input class="submit" type="submit" value="Search">
+    </form>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+    <fieldset style="width: 300px;">
+    <label for="moviesearch">Movies:</label>
+    <input type="text" name="q" id="moviesearch" placeholder="Titanic">
+    <p>
+        <label for="movies">Movie Theaters:</label>
+        <select name="as_sitesearch" id="theaters" class="pages">
+        <option value="https://www.metrotheatres.com/loveland/metrolux-12-theatres-plus-imax-at-centerra/theater-info/">MetroLux</option>
+        <option value="https://www.cinemark.com/theatres/co-greeley/cinemark-greeley-mall">CineMark</option>
+        <option value="https://www.kresscinema.com/now-playing">Kress Theater</option>
+        </select>
+    </p>
+    <div>
+    <input type="radio" name="filter" value="0" id="movies">
+    <label for="movies">Show Hidden Resources</label><br>
+    <input type="radio" id="movie" name="tbm" value="isch">
+    <label for="movie">Only Show Images</label>
+    </div>
+    </fieldset>
+    <input class="submit" type="submit" value="Search">
+    </form>
+</body>
 </html>
