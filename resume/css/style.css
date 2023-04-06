@@ -1,0 +1,32 @@
+  body
+  {
+    background-color: rgb(222, 222, 222);
+  }
+  h1
+  {
+    color: black;
+    font-size: 38pt;
+    font-family: georgia;
+    text-decoration: underline;
+  }
+  h2
+  {
+    color: rgb(98, 145, 240);
+    font-size: 24pt;
+    font-family:georgia;
+  }
+  p
+  {
+    color: black;
+    font-size: 14pt;
+    font-family: georgia;
+  }
+  img
+  {
+    width: 200px;
+    border-radius: 15%;
+    opacity: 100%;
+    padding: 10px;
+    margin: 10px;
+    filter: none;
+  }
