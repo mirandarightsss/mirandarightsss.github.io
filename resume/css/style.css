@@ -5,21 +5,24 @@
   h1
   {
     color: black;
-    font-size: 38pt;
+    font-size: calc(12pt+4vw);
     font-family: georgia;
     text-decoration: underline;
+    text-align: center;
   }
   h2
   {
     color: rgb(98, 145, 240);
     font-size: 24pt;
     font-family:georgia;
+    text-align: center;
   }
   p
   {
     color: black;
     font-size: 14pt;
     font-family: georgia;
+    text-align: center;
   }
   img
   {
@@ -29,4 +32,10 @@
     padding: 10px;
     margin: 10px;
     filter: none;
+    text-align: center;
+  }
+  nav
+  {
+    border: 2px var(rgb(98, 145, 240)) solid;
+    text-align: center;
   }
