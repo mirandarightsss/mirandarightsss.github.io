@@ -6,22 +6,19 @@ h1
 {
   color: black;
   font-size: calc(12pt+4vw);
-  font-family: georgia;
   text-decoration: underline;
   text-align: center;
 }
 h2
 {
   color: rgb(98, 145, 240);
-  font-size: 24pt;
-  font-family:georgia;
+  font-size: 20pt;
   text-align: center;
 }
 p
 {
   color: black;
   font-size: 14pt;
-  font-family: georgia;
   text-align: center;
 }
 img
